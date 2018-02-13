@@ -2357,6 +2357,112 @@ general purpose rectifier, 1 A</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="nrf24l01">
+<packages>
+<package name="QFN20">
+<description>&lt;b&gt;QFN20&lt;/b&gt;
+&lt;p&gt;
+4mm x 4mm package, with matt tin plating from Nordic Semiconductor.</description>
+<wire x1="-2" y1="2" x2="2" y2="2" width="0.254" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="-2" width="0.254" layer="21"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.254" layer="21"/>
+<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.254" layer="21"/>
+<circle x="-0.635" y="0.635" radius="0.635" width="0.127" layer="1"/>
+<smd name="5" x="-1.9" y="-1" dx="0.5" dy="0.25" layer="1" roundness="80"/>
+<smd name="4" x="-1.9" y="-0.5" dx="0.5" dy="0.25" layer="1" roundness="80"/>
+<smd name="3" x="-1.9" y="0" dx="0.5" dy="0.25" layer="1" roundness="80"/>
+<smd name="2" x="-1.9" y="0.5" dx="0.5" dy="0.25" layer="1" roundness="80" rot="R180"/>
+<smd name="1" x="-1.9" y="1" dx="0.5" dy="0.25" layer="1" roundness="80"/>
+<smd name="20" x="-1" y="1.9" dx="0.5" dy="0.25" layer="1" roundness="80" rot="R90"/>
+<smd name="19" x="-0.5" y="1.9" dx="0.5" dy="0.25" layer="1" roundness="80" rot="R90"/>
+<smd name="18" x="0" y="1.9" dx="0.5" dy="0.25" layer="1" roundness="80" rot="R270"/>
+<smd name="17" x="0.5" y="1.9" dx="0.5" dy="0.25" layer="1" roundness="80" rot="R90"/>
+<smd name="16" x="1" y="1.9" dx="0.5" dy="0.25" layer="1" roundness="80" rot="R90"/>
+<smd name="15" x="1.9" y="1" dx="0.5" dy="0.25" layer="1" roundness="80" rot="R180"/>
+<smd name="14" x="1.9" y="0.5" dx="0.5" dy="0.25" layer="1" roundness="80" rot="R180"/>
+<smd name="13" x="1.9" y="0" dx="0.5" dy="0.25" layer="1" roundness="80" rot="R180"/>
+<smd name="12" x="1.9" y="-0.5" dx="0.5" dy="0.25" layer="1" roundness="80" rot="R180"/>
+<smd name="11" x="1.9" y="-1" dx="0.5" dy="0.25" layer="1" roundness="80" rot="R180"/>
+<smd name="10" x="1" y="-1.9" dx="0.5" dy="0.25" layer="1" roundness="80" rot="R270"/>
+<smd name="9" x="0.5" y="-1.9" dx="0.5" dy="0.25" layer="1" roundness="80" rot="R270"/>
+<smd name="8" x="0" y="-1.9" dx="0.5" dy="0.25" layer="1" roundness="80" rot="R270"/>
+<smd name="7" x="-0.5" y="-1.9" dx="0.5" dy="0.25" layer="1" roundness="80" rot="R270"/>
+<smd name="6" x="-1" y="-1.9" dx="0.5" dy="0.25" layer="1" roundness="80" rot="R270"/>
+<text x="-2" y="-4.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="3" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.5" y1="-2.5" x2="2.5" y2="2.5" layer="39" rot="R270"/>
+</package>
+</packages>
+<symbols>
+<symbol name="NRF24L01_STANDARD">
+<wire x1="-12.7" y1="25.4" x2="-12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="10.16" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-22.86" x2="10.16" y2="25.4" width="0.254" layer="94"/>
+<wire x1="10.16" y1="25.4" x2="-12.7" y2="25.4" width="0.254" layer="94"/>
+<text x="-12.7" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-12.7" y="25.4" size="1.778" layer="95">&gt;NAME</text>
+<pin name="XC1" x="-17.78" y="22.86" length="middle"/>
+<pin name="XC2" x="-17.78" y="17.78" length="middle"/>
+<pin name="DVDD" x="-17.78" y="10.16" length="middle"/>
+<pin name="VDD_PA" x="-17.78" y="7.62" length="middle"/>
+<pin name="VDD" x="-17.78" y="0" length="middle"/>
+<pin name="VDD_1" x="-17.78" y="-2.54" length="middle"/>
+<pin name="VDD_2" x="-17.78" y="-5.08" length="middle"/>
+<pin name="VSS" x="-17.78" y="-12.7" length="middle"/>
+<pin name="VSS_1" x="-17.78" y="-15.24" length="middle"/>
+<pin name="VSS_2" x="-17.78" y="-17.78" length="middle"/>
+<pin name="VSS_3" x="-17.78" y="-20.32" length="middle"/>
+<pin name="ANT2" x="15.24" y="22.86" length="middle" rot="R180"/>
+<pin name="ANT1" x="15.24" y="17.78" length="middle" rot="R180"/>
+<pin name="IREF" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="IRQ" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="CE" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="CSN" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="SCK" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="MOSI" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="MISO" x="15.24" y="-15.24" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NRF24L01">
+<description>&lt;b&gt;nRF24L01&lt;/b&gt;
+&lt;p&gt;
+Single chip 2.4GHz transceiver from Nordic Semiconductors.</description>
+<gates>
+<gate name="G$1" symbol="NRF24L01_STANDARD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN20">
+<connects>
+<connect gate="G$1" pin="ANT1" pad="12"/>
+<connect gate="G$1" pin="ANT2" pad="13"/>
+<connect gate="G$1" pin="CE" pad="1"/>
+<connect gate="G$1" pin="CSN" pad="2"/>
+<connect gate="G$1" pin="DVDD" pad="19"/>
+<connect gate="G$1" pin="IREF" pad="16"/>
+<connect gate="G$1" pin="IRQ" pad="6"/>
+<connect gate="G$1" pin="MISO" pad="5"/>
+<connect gate="G$1" pin="MOSI" pad="4"/>
+<connect gate="G$1" pin="SCK" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="7"/>
+<connect gate="G$1" pin="VDD_1" pad="15"/>
+<connect gate="G$1" pin="VDD_2" pad="18"/>
+<connect gate="G$1" pin="VDD_PA" pad="11"/>
+<connect gate="G$1" pin="VSS" pad="8"/>
+<connect gate="G$1" pin="VSS_1" pad="14"/>
+<connect gate="G$1" pin="VSS_2" pad="17"/>
+<connect gate="G$1" pin="VSS_3" pad="20"/>
+<connect gate="G$1" pin="XC1" pad="10"/>
+<connect gate="G$1" pin="XC2" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2375,6 +2481,7 @@ general purpose rectifier, 1 A</description>
 <part name="Q1" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="2N2222*" device="" package3d_urn="urn:adsk.eagle:package:28973/2" technology="A"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="J_ULTRASONIC_1" library="Ultrasonic Sensor HC-SR04" deviceset="HC-SR04" device=""/>
+<part name="U$1" library="nrf24l01" deviceset="NRF24L01" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2389,6 +2496,7 @@ general purpose rectifier, 1 A</description>
 <instance part="Q1" gate="G$1" x="198.12" y="45.72"/>
 <instance part="P+1" gate="1" x="198.12" y="88.9"/>
 <instance part="J_ULTRASONIC_1" gate="J_ULTRASONIC" x="177.8" y="83.82" rot="R90"/>
+<instance part="U$1" gate="G$1" x="137.16" y="104.14"/>
 </instances>
 <busses>
 </busses>
@@ -2451,14 +2559,6 @@ general purpose rectifier, 1 A</description>
 <wire x1="55.88" y1="10.16" x2="58.42" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="PCB1" gate="G$1" pin="3.3V"/>
-<wire x1="185.42" y1="27.94" x2="162.56" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="J_ULTRASONIC_1" gate="J_ULTRASONIC" pin="5V"/>
-<wire x1="185.42" y1="27.94" x2="185.42" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="J_ULTRASONIC_1" gate="J_ULTRASONIC" pin="TRIG"/>
@@ -2494,6 +2594,88 @@ general purpose rectifier, 1 A</description>
 <junction x="139.7" y="-5.08"/>
 <pinref part="PCB1" gate="G$1" pin="&lt;USB&gt;D-"/>
 <wire x1="142.24" y1="-5.08" x2="142.24" y2="0" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="CSN"/>
+<wire x1="152.4" y1="96.52" x2="157.48" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="96.52" x2="157.48" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="66.04" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="66.04" x2="116.84" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="8"/>
+<wire x1="116.84" y1="33.02" x2="119.38" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="CE"/>
+<wire x1="152.4" y1="99.06" x2="154.94" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="99.06" x2="154.94" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="68.58" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="68.58" x2="114.3" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="7"/>
+<wire x1="114.3" y1="40.64" x2="119.38" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="VSS"/>
+<wire x1="119.38" y1="91.44" x2="111.76" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="91.44" x2="111.76" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="GND"/>
+<wire x1="111.76" y1="17.78" x2="119.38" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="PCB1" gate="G$1" pin="5V"/>
+<pinref part="J_ULTRASONIC_1" gate="J_ULTRASONIC" pin="5V"/>
+<wire x1="162.56" y1="30.48" x2="185.42" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="30.48" x2="185.42" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="VDD"/>
+<wire x1="119.38" y1="104.14" x2="116.84" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="104.14" x2="116.84" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="71.12" x2="167.64" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="71.12" x2="167.64" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="3.3V"/>
+<wire x1="167.64" y1="27.94" x2="162.56" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="SCK"/>
+<wire x1="152.4" y1="93.98" x2="160.02" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="93.98" x2="160.02" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="73.66" x2="109.22" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="73.66" x2="109.22" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="13"/>
+<wire x1="109.22" y1="20.32" x2="119.38" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="MOSI"/>
+<wire x1="152.4" y1="91.44" x2="162.56" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="91.44" x2="162.56" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="76.2" x2="106.68" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="76.2" x2="106.68" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="~11"/>
+<wire x1="106.68" y1="25.4" x2="119.38" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="MISO"/>
+<wire x1="152.4" y1="88.9" x2="152.4" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="78.74" x2="104.14" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="78.74" x2="104.14" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="12"/>
+<wire x1="104.14" y1="22.86" x2="119.38" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
