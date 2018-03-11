@@ -12,7 +12,7 @@ def sendNotification(token, channel, message):
                 "message_type" : "text/plain"
         }
 
-        req = urllib2.Request('http://api.pushetta.com/api/pushes/{0}/'.format($
+        req = urllib2.Request('http://api.pushetta.com/api/pushes/{0}/'.format(channel))
         req.add_header('Content-Type', 'application/json')
         req.add_header('Authorization', 'Token {0}' .format(token))
 
